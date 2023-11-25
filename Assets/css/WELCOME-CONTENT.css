@@ -1,4 +1,4 @@
-.WELCOME-CONTENT {
+.WELCOME-CONTENT{
     min-height: 100vh;
     background-image: url('../img/BANNER\ WEB.png');
     background-position: center;
@@ -9,7 +9,7 @@
 }
 
 .BANNER{
-    height: calc(100vh - 137px);
+    height:100vh;
     padding-top: 137px;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     display: block;
     white-space: nowrap;
     border-right: 3px solid #95ffdc;
-    width: 66.9ch;
+    width: 66.75ch;
     animation: typing 7s steps(70,end)  , blink .5s infinite step-end alternate;
     overflow: hidden ;
 }
