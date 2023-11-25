@@ -7,3 +7,45 @@
     background-color: #0009;
     background-blend-mode: soft-light;
 }
+
+.BANNER{
+    height: calc(100vh - 137px);
+    padding-top: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.BANNER__TITTLE{
+    color: #fff;
+    font-size: 80px;
+    text-shadow: -6px 4px 2px rgba(149,255,220,0.6);
+
+}
+
+.BANNER__SUBTITTLE{
+    font-size: 28px;
+    text-shadow: -2px 4px 4px rgba(149,255,220,0.6);
+    color: #fff;
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid #95ffdc;
+    width: 67ch;
+    animation: typing 7s steps(70,end)  , blink .5s infinite step-end alternate;
+    overflow: hidden ;
+}
+
+@keyframes typing {
+    0%{
+      width: 0%;
+    }
+}
+
+@keyframes  blink{
+50%{
+    border-color: transparent;
+ }
+}

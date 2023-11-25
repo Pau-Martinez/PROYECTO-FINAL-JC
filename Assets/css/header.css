@@ -26,6 +26,7 @@ height: 4rem;
     color: #FFF;
     font-weight: 700;
     font-size: 33px;
+    text-shadow: -2px 4px 4px rgba(149,255,220,0.6);
 }
 
 .header__menu {
@@ -43,6 +44,7 @@ height: 4rem;
     font-weight: 700;
     font-size: 20px;
     transition: 0.3s;
+    text-shadow: -2px 4px 4px rgba(149,255,220,0.6);
 }
 
 .header__link::after {
