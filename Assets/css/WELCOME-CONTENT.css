@@ -33,7 +33,7 @@
     display: block;
     white-space: nowrap;
     border-right: 3px solid #95ffdc;
-    width: 67ch;
+    width: 66.9ch;
     animation: typing 7s steps(70,end)  , blink .5s infinite step-end alternate;
     overflow: hidden ;
 }
