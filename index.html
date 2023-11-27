@@ -8,14 +8,35 @@
  <link rel="shortcut icon" href="./Assets/img/FAVICON.png" type="image/x-icon" >
 </head>
 <body>
-    <header class="header">
+
+    <header class="header" id="header">
 
         <div class="header__brand">
             <img src="./Assets/img/FAVICON.png"alt="our brand logo">
             <h1> COOL BREEZE</h1>
         </div>
 
-        <nav>
+        <i class="header__icon" id="menu-open"> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-grid" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+          </svg>
+        </i>
+
+        <nav class="header__nav" id="nav-menu">
+
+            <i class="header__icon header__icon--close" id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
+                  
+            </i>
+
             <ul class="header__menu">
                 <li><a class="header__link" href="./index.html" >INICIO</a></li>
                 <li><a class="header__link" href="./Assets/views/Acerca de nosotros.html">ACERCA DE NOSOTROS</a></li>
@@ -76,6 +97,32 @@
 
       </div>
     </section>
+
+   <section class="Reseñas">
+    <h2 class="Reseñas__tittle">Reseñas</h2>
+    <div class="Reseñas__container">
+
+    <div class="Reseñas__element">
+        <img class="Reseñas__image" src="./Assets/img/RESEÑAS 1.jpg" alt="">
+    <div class="Reseñas__content">
+        <h2>Allison Arias</h2>
+        <h3>Excelente calidad y productos</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatem repellendus adipisci ex soluta voluptas harum debitis. Soluta perspiciatis placeat autem pariatur blanditiis quos modi exercitationem commodi quia! Explicabo, esse!
+            Quo officiis, iusto esse possimus reprehenderit nisi ullam illum? Illum, architecto inventore dolore quia, nisi aut ab modi velit quibusdam tempora labore quasi cum libero non, ratione facilis nulla tempore?
+            Necessitatibus non cum laborum, consectetur quod molestias vitae facilis ad adipisci aut mollitia animi qui, perspiciatis vel saepe neque, amet libero ea aperiam in explicabo omnis. Commodi neque unde eos.
+        </p>
+        <div class="Reseñas__stars">
+            <i class="Reseñas__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" stroke-width="0" fill="currentColor" /></svg>
+            </i>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+   </section>
+
    </main>
     <footer></footer>
 <script src="./Assets/js/index.js"></script>

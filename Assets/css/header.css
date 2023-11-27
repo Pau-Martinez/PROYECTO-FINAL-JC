@@ -3,12 +3,17 @@
     top: 0;
     left: 0;
     width: 100%;
-   /* background-color: #95ffdc;*/
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /* box-shadow: 0px 3px 34px -8px rgba(0,0,149,1);*/
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.header--fill{
+    background-color: #9bdbf5;
+    box-shadow: 0px 3px 34px -8px rgb(0, 107, 149);
 }
 
 .header__brand {
@@ -47,6 +52,7 @@ height: 4rem;
     text-shadow: -2px 4px 4px rgba(149,255,220,0.6);
 }
 
+
 .header__link::after {
     content: '';
     position: absolute;
@@ -75,3 +81,58 @@ transition: 0.5s;
 .header__link--button:hover {
 background-color: #ffffff55;
 }
+
+.header__icon{
+    color: #FFF;
+    display: none;
+}
+
+.header__icon--close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.header__nav--visible{
+  right: 0 !important;
+  }
+
+   @media screen and  (width <= 720px ){
+    .header{
+        padding: 15px 25px;
+    }
+
+    .header__nav{ 
+        position: absolute;
+        top: 0;
+        right: -100vh;
+        height: 100vh;
+        justify-content: flex-start;
+        padding: 50px;
+        background-color: #9bdbf5;
+        box-shadow: 0px 3px 34px -8px rgb(0, 107, 149);
+        width: 80%;
+        transition: right 0.3s;
+    }
+
+    .header__menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .header__brand-img{
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .header__link{
+        font-size: 20px;
+    }
+
+    .header__icon{
+        display: block;
+    }
+}
+
+    

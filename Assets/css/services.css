@@ -8,17 +8,17 @@ background-color: #fff;
     font-size: 40px;
     text-shadow: -2px 2px 2px rgba(149,255,220,0.6);
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 .services__container{
-   max-width: 1110px;
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(3*1fr );
-   gap: 20px;
-   text-align: center;
-   
-}
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3*1fr );
+    gap: 20px;
+    text-align: center;
+    }
 
 .services__card{
     position: relative;
@@ -68,9 +68,22 @@ font-size: 22px;
     outline: none;
     border-radius: 10px;
     padding: 20px 25px;
-    background-color: aqua;
+    background-color: #9bdbf5;
     color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
 }
+
+@media screen and  (width <= 720px ){
+    .services__container{
+    grid-template-columns: repeat(1*1fr );
+    }
+
+    .services{
+    margin: 0 auto;
+    padding-inline: 10px;
+    }
+}
+
+
