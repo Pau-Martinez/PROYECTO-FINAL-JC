@@ -71,4 +71,17 @@
 
 }
 
+@media screen and (width <=720px){
+    .reseñas__element{
+    flex-direction: column;
+    margin: 5px;
+    }
+
+    .reseñas__image{
+        flex: auto;
+        border-radius: 0;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
 

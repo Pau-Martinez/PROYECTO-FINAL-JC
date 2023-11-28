@@ -25,6 +25,10 @@
 .header__brand img{
 width: 4rem;
 height: 4rem;
+background-color: #9bdbf5;
+border-radius: 50%;
+border: 1px solid white;
+padding: 10px;
 }
 
 .header__brand h1 {
@@ -83,6 +87,7 @@ background-color: #ffffff55;
 }
 
 .header__icon{
+    cursor: pointer;
     color: #FFF;
     display: none;
 }

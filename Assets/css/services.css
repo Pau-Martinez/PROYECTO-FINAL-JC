@@ -15,8 +15,12 @@ padding-bottom: 40px ;
     max-width: 1110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3 ,1fr );
+    grid-template-columns: repeat(1, 3fr) ;
     gap: 20px;
+    padding: 40PX 0;
+    text-align: center;
+
+    
     
     }
 
