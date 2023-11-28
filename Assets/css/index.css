@@ -3,6 +3,7 @@
 @import "./WELCOME-CONTENT.css";
 @import './services.css';
 @import './Reseñas.css';
+@import './footer.css';
 * {
     margin: 0;
     padding: 0;
