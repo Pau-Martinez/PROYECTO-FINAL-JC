@@ -15,7 +15,7 @@ background-color: #fff;
     max-width: 1110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3*1fr );
+    grid-template-columns: repeat(3 ,1fr );
     gap: 20px;
     text-align: center;
     }
@@ -26,6 +26,7 @@ background-color: #fff;
     padding: 35px 55px;
     transition: 0.3s;
     text-align: center;
+    
 }
 
 .services__card:hover{
