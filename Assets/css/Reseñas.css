@@ -1,5 +1,6 @@
 .reseñas{
     background-color: white;
+    
 }
 
 
@@ -13,28 +14,46 @@
 }
 
 .reseñas__element{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
     border-radius: 15px;
+    background-color: #9bdbf5;
+    grid-template-columns: repeat(3 ,1fr );
+    gap: 20px;
     
+}
 
+.reseñas__element--reverse{
+    flex-direction: row-reverse;
+}
+
+.reseñas__element--reverse .reseñas__image {
+    border-radius: 0 15px 0 15px 0;
 }
 
 .reseñas__image{
-    width: 300px;
-    height: 300px;
+    background-image: url('../img/RESEÑAS\ 1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    flex: 50%;
+    border-radius: 15px 0 0 15px;
 }
 
 .reseñas__image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
+    width: 300px;
+    height: 300px;
+    
 }
 
 .reseñas__container{
     max-width: 1110px;
     margin: 0 auto;
     background-color: #9bdbf5;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
 }
 
 .reseñas__content{
@@ -43,10 +62,13 @@
     flex-direction: column;
     gap: 15px;
     padding: 40px;
+    flex: 50%;
 }
 
 
 .reseñas__icon{
     color: gold;
-    
+
 }
+
+

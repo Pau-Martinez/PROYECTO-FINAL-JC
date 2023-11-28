@@ -30,4 +30,9 @@ addEventListener('scroll', () => {
  }
 }) 
 
+const reseñas = document.querySelectorAll('.reseñas__element')
+
+reseñas.forEach((rese) => {
+   rese.firstElementChild.style.height = `${rese.getBoudingClientRect().height + 13 }px`
+})
 
