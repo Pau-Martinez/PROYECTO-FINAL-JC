@@ -38,6 +38,7 @@
     overflow: hidden ;
 }
 
+
 @media screen and (width <=720px){
     .BANNER__TITTLE{
         font-size: 40px;

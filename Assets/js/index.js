@@ -23,7 +23,7 @@ if (menuClose){
 //sroll in menu
 
 addEventListener('scroll', () => {
- if (this.scrollY > 100)  {
+ if (this.scrollY > 50)  {
     header.classList.add ('header--fill')
  } else {
     header.classList.remove ('header--fill')
