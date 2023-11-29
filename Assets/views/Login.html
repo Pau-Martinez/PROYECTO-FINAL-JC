@@ -3,10 +3,30 @@
 <head>
  <meta charset= "UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>document </title>
- 
+ <title>COOL BREEZE WEBSITE </title>
+ <link rel="stylesheet" href="../css/index.css">
+ <link rel="shortcut icon" href="./Assets/img/FAVICON.png" type="image/x-icon" >
 </head>
 <body>
-<h1>INICIO DE SESION</h1>
+<main class="WELCOME-CONTENT">
+    <section class="login__container">
+   <form id="login-form" class="login__form">
+    <h1 class="login__tittle">Inicio de Sección</h1>
+    <fieldset>
+        <div class="login__input">
+            <label for="">Correo:</label>
+            <input name="email" type="email" placeholder="email@email.com" required>
+        </div>
+
+        <div class="login__input">
+            <label for="">Contraseña:</label>
+            <input name="password" type="password" placeholder="*********" required>
+        </div>
+    </fieldset>
+    <button class="login__button" type="submit">Iniciar Sección</button>
+   </form>
+  </section>
+</main>
+<script src="../js/login.js"></script>
 </body>
 </html>
