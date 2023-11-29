@@ -25,13 +25,30 @@ document.addEventListener('DOMContentLoaded', () => {
    <td>${product.description}</td>
    <td>${product.price}</td>
    <td>
-      <button>Editar</button>
-      <button class="button--delete">Eliminar</button>
+      <button classs="buttton--edit" data-i"${product.id}">Editar</button>
+      <button class="button--delete" data-i"${product.id}">Eliminar</button>
    </td>
   </tr>
    
    `)).join('')
+
+   document.querySelectorAll('button-delete').forEach(button =>{
+    button.addEventListener ('click', () =>{
+   const id=button.getAttribute('data-id')
+   console.log(id)
+   
+    })
+   })
+
+   document.querySelectorAll('button-edit').forEach(button =>{
+    button.addEventListener ('click', () =>{
+   const id=button.getAttribute('data-id')
+   console.log(id)
+    })
+   })
 })
+
+
 
 const form= document.getElementById('product-form')
 
