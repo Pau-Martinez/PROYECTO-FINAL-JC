@@ -1,6 +1,7 @@
 .reseñas{
     background-color:#9bdbf5 ;
     padding-bottom: 40px ;
+    
 }
 
 
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    color: black;
    
 }
 
@@ -29,8 +31,9 @@
     align-items: center;
     border-radius: 15px;
     background-color: #9bdbf5;
-    grid-template-columns: repeat(3 ,1fr );
+    grid-template-columns: repeat(3*1fr );
     gap: 20px;
+    color: black;
     
 }
 
@@ -59,12 +62,13 @@
 
 
 .reseñas__content{
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 40px;
     flex: 50%;
+    text-align: center;
 }
 
 

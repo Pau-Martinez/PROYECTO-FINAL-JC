@@ -4,6 +4,7 @@ if (form) {
         event.preventDefault()
     const email= event.target.elements.email.value
     const password =event.target.elements.password.value
+    localStorage.setItem('HAS_USER', 'true')
 
     // email: admin@gmail.com; password: admin12345 //
     if(email === 'admin@gmail.com' && password ==='admin12345') {

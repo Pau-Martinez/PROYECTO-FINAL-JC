@@ -1,4 +1,4 @@
-.SERVICES{
+.services{
 background-color: #fff;
 padding-bottom: 40px ;
 }
@@ -6,89 +6,88 @@ padding-bottom: 40px ;
 .services__tittle{
     text-align: center;
     font-size: 40px;
-    text-shadow: -2px 2px 2px rgba(149,255,220,0.6);
     padding-top: 50px;
     margin-bottom: 20px;
 }
 
 .services__container{
-    max-width: 1110px;
+    width: 1110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1, 3fr) ;
+    grid-template-columns: repeat(3*1fr);
     gap: 20px;
-    padding: 40PX 0;
-    text-align: center;
+    padding: 40px 0;
+    
 
+    }
+
+    .services__card{
+        position: relative;
+        border-radius: 10px;
+        padding: 35px 55px;
+        transition: 0.3s;
+        text-align: center;
+        
+    }
+    
+    .services__card:hover{
+        background-color:#fff5f5 ;
+    }
+    
+    .services__favorite{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 10px 0 10px 0;
+        background-color: #fff;
+    }
     
     
+    .services__beer-img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
     }
-
-.services__card{
-    position: relative;
-    border-radius: 10px;
-    padding: 35px 55px;
-    transition: 0.3s;
-    text-align: center;
     
-}
-
-.services__card:hover{
-    background-color:#fff5f5 ;
-}
-
-.services__favorite{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 44px;
-    height: 44px;
-    padding: 10px;
-    border-radius: 10px 0 10px 0;
-    background-color: #fff;
-}
-
-
-.services__beer-img{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.services__beer-content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.services__beer-content h3 {
-font-size: 22px;
-}
-
-.services__beer-content p {
-    font-size: 16px;
+    .services__beer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services__beer-content h3 {
+    font-size: 22px;
+    }
+    
+    .services__beer-content p {
+        font-size: 16px;
+        }
+    
+    .services__button{
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 20px 25px;
+        background-color: #9bdbf5;
+        color: black;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    @media screen and  (width <= 720px ){
+        .services__container{
+        grid-template-columns: repeat(1*1fr );
+        }
+    
+        .services{
+        margin: 0 auto;
+        padding-inline: 10px;
+        }
     }
 
-.services__button{
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    padding: 20px 25px;
-    background-color: #9bdbf5;
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 700;
-}
 
-@media screen and  (width <= 720px ){
-    .services__container{
-    grid-template-columns: repeat(1*1fr );
-    }
-
-    .services{
-    margin: 0 auto;
-    padding-inline: 10px;
-    }
-}
 
 

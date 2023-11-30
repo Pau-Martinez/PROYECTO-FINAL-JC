@@ -3,10 +3,94 @@
 <head>
  <meta charset= "UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>document </title>
- 
+ <title>COOL BREEZE</title>
+ <link rel="stylesheet" href="../css/index.css">
+ <link rel="shortcut icon" href="./Assets/img/FAVICON.png" type="image/x-icon" >
 </head>
 <body>
-<h1>SERVICIOS</h1>
+
+<header class="header" id="header">
+
+    <div class="header__brand">
+        <img src="../img/FAVICON.png"alt="our brand logo">
+        <h1> COOL BREEZE</h1>
+    </div>
+
+    <i class="header__icon" id="menu-open"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-grid" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+        <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+        <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+        <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+      </svg>
+    </i>
+
+    <nav class="header__nav" id="nav-menu">
+        <i class="header__icon header__icon--close" id="menu-close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg> 
+        </i>
+
+        <ul class="header__menu">
+            <li><a class="header__link" href="../../index.html" >INICIO</a></li>
+            <li><a class="header__link header__link--button" href="./Assets/views/Login.html">INICIAR SESION </a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+<main class="WELCOME-CONTENT">
+    <section class="BANNER">
+        <h1 class="BANNER__TITTLE">COOL BREEZE</h1>
+        <h2 class="BANNER__SUBTITTLE">Cervezas que superan tus expectativas, satisfaciendo tu sed de excelencia</h2>
+    </section>
+</main>
+
+    <section class="products">
+
+        <h2 class="productos__title">PRODUCTOS</h2>
+        
+        <div class="products__container">
+            
+            <div class="products__card">
+                <h3>COOL BREEZE PREMIUM</h3>
+                <p>Cool Breeze es una cerveza artesanal única, creada para aquellos que buscan una experiencia cervecera inigualable. $3500</p>
+                <div>
+                    <button class="products__button" type="button">Adquirir</button>
+                </div>
+            </div>
+    
+            <div class="products__card">
+                <h3>COOL BREEZE CERO</h3>
+                <p>Alternativa sin alcohol con todo el sabor de una cerveza tradicional. $3200</p>
+                <div>
+                    <button class="products__button" type="button">Adquirir</button>
+                </div>
+            </div>
+    
+            <div class="products__card">
+                <h3>COOL BREEZE PREMIUM</h3>
+                <p>Refrescante y ligera, perfecta para cualquier ocasión. $3300</p>
+                <div>
+                    <button class="products__button" type="button">Adquirir</button>
+                </div>
+            </div>
+    
+            <div class="products__card">
+                <h3>COOL BREEZE ORIGINAL</h3>
+                <p>Se distingue por su estilo único y auténtico. $3400</p>
+                <div>
+                    <button class="products__button" type="button">Adquirir</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="./Assets/js/index.js"></script>
 </body>
 </html>
